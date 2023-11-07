@@ -21,13 +21,6 @@ The **USweat Fitness Tracker** is a web application designed to help users monit
 - JavaScript
 - [Additional technologies, frameworks, and languages as needed]
 
-## Screenshots or Demo
-
-[Include screenshots or provide a link to a live demo if available.]
-
-## Roadmap and Future Enhancements
-
-Share any future plans or potential improvements for the project. This could include additional features, performance optimizations, or scalability considerations.
 
 ## Contact Information
 
