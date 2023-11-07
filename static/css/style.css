@@ -1,0 +1,429 @@
+/* CSS for Navigation Bar */
+nav {
+   background-color: #001F3F; /* Deep Navy Blue */
+   padding: 10px 0;
+   text-align:right;
+}
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   display: inline;
+   margin-left: 10px;
+}
+
+a {
+   text-decoration: none;
+   color: #FFD700; /* Light Gold */
+   font-weight: bold;
+   font-size: 16px;
+}
+
+a:hover {
+   color: #F5F5F5; /* Light Gray */
+}
+
+/* CSS for Header Section */
+header {
+   background-color: #F5F5F5; /* Light Gray */
+   padding: 40px;
+   text-align: center;
+}
+
+h1 {
+   color: #001F3F; /* Deep Navy Blue */
+   font-size: 36px;
+   margin-bottom: 20px;
+}
+
+p {
+   color: #001F3F; /* Deep Navy Blue */
+   font-size: 18px;
+}
+
+/* CSS for Body */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #FAFAFA; /* Light Gray */
+   color: #333; /* Dark Gray */
+}
+
+
+/* CSS for Sign In / Sign Up Section */
+#signin-signup {
+   background-color: #F5F5F5; /* Light Gray */
+   padding: 40px;
+   text-align: center;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+}
+
+h2 {
+   color: #001F3F; /* Deep Navy Blue */
+   margin-bottom: 20px;
+}
+
+.sign-in,
+.sign-up {
+   background-color: #FFFFFF; /* White */
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin: 20px;
+   width: 300px;
+   display: inline-block;
+}
+
+h3 {
+   color: #001F3F; /* Deep Navy Blue */
+   margin-bottom: 10px;
+}
+
+label {
+   display: block;
+   font-weight: bold;
+   color: #001F3F; /* Deep Navy Blue */
+   margin-bottom: 5px;
+   text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+button {
+   background-color: #001F3F; /* Deep Navy Blue */
+   color: #FFD700; /* Light Gold */
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+
+button:hover {
+   background-color: #FFD700; /* Light Gold */
+   color: #001F3F; /* Deep Navy Blue */
+}
+
+#signin-signup {
+   background-image: url('images/lift.jpg');
+   background-size: cover;
+ }
+ 
+ .logo {
+   max-width: 200px;
+   margin: 0 auto;
+   display: block;
+ }
+ 
+
+/* CSS for Dashboard Section */
+#dashboard {
+   background-color: #27aca1; /* turquoise */
+   padding: 40px;
+   width: 95%;
+   background-image: url('../images/weight.jpg');
+   background-size: cover;
+}
+input {
+      max-width: 100px;
+ }
+
+h2 {
+   color: #001F3F; /* Deep Navy Blue */
+   margin-bottom: 20px;
+}
+
+/* Current Goals Section */
+#current-goals {
+   background-color: #FFFFFF; /* White */
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+}
+
+#goals-list {
+   list-style-type: none;
+   padding: 0;
+   margin-bottom: 10px;
+}
+
+#goals-list li {
+   margin-bottom: 10px;
+   color: #001F3F; /* Deep Navy Blue */
+}
+
+button#edit-goals,
+button#delete-goals,
+button#edit-workout,
+button#delete-workout {
+   background-color: #001F3F; /* Deep Navy Blue */
+   color: #FFD700; /* Light Gold */
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 5px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   transition: background-color 0.3s;
+}
+
+button#edit-goals:hover,
+button#delete-goals:hover,
+button#edit-workout:hover,
+button#delete-workout:hover {
+   background-color: #FFD700; /* Light Gold */
+   color: #001F3F; /* Deep Navy Blue */
+}
+
+/* Workout History Section */
+#workout-history {
+   background-color: #FFFFFF; /* White */
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+}
+
+/* Workout Display Section */
+#workout-display {
+   background-color: #FFFFFF; /* White */
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+   height: fit-content;
+}
+
+/* Chart Section */
+#chart {
+   background-color: #FFFFFF; /* White */
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#chart-container {
+   text-align: center;
+}
+
+canvas {
+   max-width: 100%;
+   height: auto;
+   display: block;
+   margin: 0 auto;
+}
+
+/* CSS for Set Goals Section */
+#set-goals {
+   background-color: #f5f5f5; /* Light Gray */
+   padding: 40px;
+   width: 95%;
+   background-image: url('../images/strength.jpg');
+   background-size: cover;
+}
+
+h2 {
+   color: #001F3F; /* Deep Navy Blue */
+   margin-bottom: 20px;
+}
+
+#goal-setting {
+   background-color: #FFFFFF; /* White */
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+   display: block;
+   font-weight: bold;
+   color: #001F3F; /* Deep Navy Blue */
+   margin-bottom: 5px;
+   text-align: left;
+}
+
+input[type="number"] {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+select {
+   width: 30%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+button#submit-goals {
+   background-color: #001F3F; /* Deep Navy Blue */
+   color: #FFD700; /* Light Gold */
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+
+button#submit-goals:hover {
+   background-color: #FFD700; /* Light Gold */
+   color: #001F3F; /* Deep Navy Blue */
+}
+
+/* CSS for Workout Tracker Section */
+#workout-tracker {
+   background-color: #27aca1; /* turqoise */
+   padding: 40px;
+   width: 95%;
+   background-image: url('images/hiit.jpg');
+   background-size: cover; 
+}
+
+h2 {
+   color: #001F3F; /* Deep Navy Blue */
+   margin-bottom: 20px;
+}
+
+#workout-form,
+#workout-logging,
+#workout-history {
+   background-color: #FFFFFF; /* White */
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+}
+
+label {
+   display: block;
+   font-weight: bold;
+   color: #001F3F; /* Deep Navy Blue */
+   margin-bottom: 5px;
+   text-align: left;
+}
+
+input[type="text"],
+input[type="number"] {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+button[type="submit"],
+button#log-workout {
+   background-color: #001F3F; /* Deep Navy Blue */
+   color: #FFD700; /* Light Gold */
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover,
+button#log-workout:hover {
+   background-color: #FFD700; /* Light Gold */
+   color: #001F3F; /* Deep Navy Blue */
+}
+
+/* Workout Type Radio Buttons */
+input[type="radio"] {
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+/* Additional Styles for Radio Labels (Optional) */
+label[for="cardio"],
+label[for="strength"],
+label[for="flexibility"] {
+   color: #001F3F; /* Deep Navy Blue */
+   font-weight: normal;
+}
+
+/* CSS for Logout Section */
+#logout {
+   background-color: #F5F5F5; /* Light Gray */
+   padding: 40px;
+   text-align: center;
+}
+
+.container {
+   background-color: #FFFFFF; /* White */
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   display: inline-block;
+}
+
+h2 {
+   color: #001F3F; /* Deep Navy Blue */
+   margin-bottom: 20px;
+}
+
+p {
+   color: #001F3F; /* Deep Navy Blue */
+   margin-bottom: 20px;
+}
+
+button {
+   background-color: #001F3F; /* Deep Navy Blue */
+   color: #FFD700; /* Light Gold */
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+
+button:hover {
+   background-color: #FFD700; /* Light Gold */
+   color: #001F3F; /* Deep Navy Blue */
+}
+
+/* CSS for Footer */
+footer {
+    background-color: #001F3F; /* Deep Navy Blue */
+    color: #FFD700; /* Light Gold */
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+   margin: 0;
+   font-size: 14px;
+}
+
+footer img {
+   max-width: 100px;
+ }
+
+ .container1 {
+   width: 50%;
+}

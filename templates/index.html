@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>USweat Fitness Tracker</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        
+        <nav>
+            <ul>
+                <li><a href="#signin-signup">Sign In / Sign Up</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#set-goals">Set Fitness Goals</a></li>
+                <li><a href="#workout-tracker">Workout Tracker</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+            
+        </nav>
+                
+    </head>
+    <body>
+                
+        <section id="signin-signup">
+            <div class="container">
+                <h2>Sign In / Sign Up</h2>
+                <img src="../images/logo.png" alt="USweat Logo" class="logo">
+                <div class="sign-in">
+                    <h3>Sign In</h3>
+                    <form>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required><br>
+        
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required><br>
+        
+                        <button type="submit">Sign In</button>
+                    </form>
+                </div>
+                <div class="sign-up">
+                    <h3>Sign Up</h3>
+                    <form>
+                        <label for="new-username">Username:</label>
+                        <input type="text" id="new-username" name="new-username" required><br>
+        
+                        <label for="new-password">Password:</label>
+                        <input type="password" id="new-password" name="new-password" required><br>
+        
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </section>        
+
+        <section id="dashboard">
+            <!-- Dashboard content -->
+            <!-- Current Goals Section -->
+            <div class="container1">
+                <div id="current-goals">
+                    <h2>Current Fitness Goals</h2>
+                    <ul id="goals-list"></ul>
+                    <!-- Add/Edit Goals Button -->
+                    <button id="edit-goals"><i class="fas fa-edit"></i>Edit Goals</button>
+                    <!-- Delete Goals Button -->
+                    <button id="delete-goals"><i class="fas fa-trash-alt"></i>Delete Goals</button>
+    
+                </div>
+                <!-- Workout History Section -->
+                <div id="workout-history">
+                    <h2>Workout History</h2>
+                    <!-- Workout history will be displayed here -->
+                </div>
+                <!--Workout display-->
+                <div id="workout-display">
+                    <!-- Workout details will be dynamically added here -->
+                </div>
+                <!--Edit goals-->
+                <button id="edit-workout"><i class="fas fa-edit"></i>Edit Workout</button>
+                <button id="delete-workout"><i class="fas fa-trash-alt"></i>Delete Workout</button>
+    
+                <div id="chart">
+                    <!-- Chart Section -->
+                    <div id="chart-container">
+                        <canvas id="workout-chart"></canvas>
+                    </div>
+                    <!-- Chart Canvas -->
+                    <canvas id="progress-chart" width="20" height="10"></canvas>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section id="set-goals">
+            <!-- Set Fitness Goals content -->
+            <div class="container1">
+                <div id="goal-setting">
+                    <h2>Set Fitness Goals</h2>
+                    <label for="duration">Duration (minutes):</label>
+                    <input type="number" id="duration" min="1" required>
+                    
+                    <label for="calories">Calories Burned:</label>
+                    <input type="number" id="calories" min="1" required>
+                    
+                    <label for="workout-type">Workout Type:</label>
+                    <select id="workout-type" required>
+                        <option value="cardio">Cardio</option>
+                        <option value="strength">Strength</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                     <!-- Workout Statistics Section -->
+                    <div id="workout-statistics">
+                        <!-- Workout statistics will be displayed here -->
+                    </div>
+                    
+                    <button id="submit-goals"><i class="fas fa-check"></i>Submit Goals</button>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section id="workout-tracker">
+            <!-- Workout Tracker content -->
+            <div class="container1">
+                <!-- Workout Type Radio Buttons -->
+                <label>Workout Type:</label>
+                <input type="radio" id="cardio" name="workout-type" value="Cardio" required>
+                <label for="cardio">Cardio</label>
+
+                <input type="radio" id="strength" name="workout-type" value="Strength" required>
+                <label for="strength">Strength Training</label>
+
+                <input type="radio" id="flexibility" name="workout-type" value="Flexibility" required>
+                <label for="flexibility">Flexibility</label>
+                <!-- Input Form -->
+                <form id="workout-form">
+                    <label for="exercise"><i class="fas fa-dumbbell"></i>Exercise:</label>
+                    <input type="text" id="exercise" required>
+                    
+                    <label for="sets"><i class="fas fa-rotate"></i>Sets:</label>
+                    <input type="number" id="sets" required>
+                    
+                    <label for="reps"><i class="fas fa-hand-point-up"></i>Reps:</label>
+                    <input type="number" id="reps" required>
+                    
+                    <label for="duration"><i class="fas fa-hourglass-start"></i>Duration (minutes):</label>
+                    <input type="number" id="duration" required>
+                    
+                    <button type="submit"><i class="fas fa-plus"></i>Add Workout</button>
+                </form>
+                <!-- Workout Logging Section -->
+                <div id="workout-logging">
+                    <h2>Log Your Workouts</h2>
+                    <label for="exercise">Exercise:</label>
+                    <input type="text" id="exercise" required>
+                    
+                    <label for="sets">Sets:</label>
+                    <input type="number" id="sets" min="1" required>
+                    
+                    <label for="reps">Reps:</label>
+                    <input type="number" id="reps" min="1" required>
+                    
+                    <label for="duration">Duration (minutes):</label>
+                    <input type="number" id="duration" min="1" required>
+                    
+                    <button id="log-workout">Log Workout</button>
+                </div>
+                <!-- Workout History Section -->
+                <div id="workout-history">
+                    <h2>Workout History</h2>
+                    <ul id="history-list"></ul>
+                </div>
+                               
+            </div>
+            
+        </section>
+
+        <section id="logout">
+            <div class="container">
+                <h2>Logout</h2>
+                <p>Are you sure you want to log out?</p>
+                <button><i class="fas fa-right-from-bracket"></i>Logout</button>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <img src="../images/logo.png" alt="Logo">
+                <p>&copy; 2023 USweat Fitness Tracker. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        
+    </body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/js/script.js"></script>
+
+</html>
